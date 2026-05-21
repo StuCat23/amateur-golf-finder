@@ -60,6 +60,65 @@ export default function GolfTournamentHomePage() {
           </div>
         </div>
       </header>
+
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-black/55" />
+
+        <div className="relative mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-center px-6 py-24">
+          <div className="max-w-3xl">
+            <div className="mb-6 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
+              Discover amateur tournaments across the country
+            </div>
+
+            <h2 className="text-5xl font-black leading-tight tracking-tight text-white md:text-7xl">
+              Find Your Next
+              <span className="block text-[#C8A96B]">Golf Tournament</span>
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 md:text-xl">
+              Explore local scrambles, member-guest events, amateur tours,
+              and competitive tournaments built for golfers who love to compete.
+            </p>
+
+            {/* Search Bar */}
+            <div className="mt-10 rounded-3xl bg-white p-4 shadow-2xl">
+              <div className="grid gap-4 md:grid-cols-5">
+                <input
+                  type="text"
+                  placeholder="Location"
+                  className="rounded-2xl border border-slate-200 px-4 py-4 outline-none transition focus:border-[#163020]"
+                />
+
+                <select className="rounded-2xl border border-slate-200 px-4 py-4 outline-none focus:border-[#163020]">
+                  <option>Format</option>
+                  <option>Stroke Play</option>
+                  <option>Scramble</option>
+                  <option>Match Play</option>
+                </select>
+
+                <select className="rounded-2xl border border-slate-200 px-4 py-4 outline-none focus:border-[#163020]">
+                  <option>Handicap</option>
+                  <option>0-5</option>
+                  <option>6-10</option>
+                  <option>11-15</option>
+                  <option>16+</option>
+                </select>
+
+                <input
+                  type="date"
+                  className="rounded-2xl border border-slate-200 px-4 py-4 outline-none transition focus:border-[#163020]"
+                />
+
+                <button className="rounded-2xl bg-[#163020] px-6 py-4 font-semibold text-white transition hover:opacity-90">
+                  Search Tournaments
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
