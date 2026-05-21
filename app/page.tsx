@@ -119,6 +119,25 @@ export default function GolfTournamentHomePage() {
           </div>
         </div>
       </section>
+
+      {/* Stats Section */}
+      <section className='border-b border-slate-200 bg-white py-10'>
+        <div className='mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 md:grid-cols-4'>
+          {[
+            ['1,200+', 'Tournaments Listed'],
+            ['350+', 'Golf Courses'],
+            ['42', 'States Covered'],
+            ['15k+', 'Golfers Using Platform'],
+          ].map (([value, label]) => (
+            <div key={label}>
+              <div className='text-4xl font-black text-[163020]'>{value}</div>
+              <div className='mt-2 text-sm text-slate-600'>{label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      
     </main>
   );
 }
