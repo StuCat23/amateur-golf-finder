@@ -137,7 +137,28 @@ export default function GolfTournamentHomePage() {
         </div>
       </section>
 
-      
+      {/* CTA */}
+      <section className='mx-auto max-w-7xl px-6 py-24'>
+        <div className='rounded-[3rem] bg-gradient-to-br from-[163020] to-[#244B33] px-10 py-20 text-center text-white shadow-2xl'>
+          <h3 className='text-5xl font-black tracking-tight'>
+            Ready To Find Your Next Event?
+          </h3>
+
+          <p className='mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-200'>
+            Join thousands of amateur golfer discovering tournaments, scrambles and competitive events every week.
+          </p>
+
+          <div className='mt-10 flex flex-col justify-center gap-4 sm:flex-row'>
+            <button className='rounded-2xl bg-white px-8 py-4 font-semibold text-[#163020] transition hover:opacity-90'>
+              Explore Tournaments
+            </button>
+
+            <button className='rounded-2xl border border-white/20 bg-white/10 px-8 py-4 font-semibold backdrop-blur-md transition hover:bg-white/20'>
+              Submit An Event
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
